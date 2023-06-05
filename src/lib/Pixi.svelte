@@ -33,10 +33,10 @@
     container.addChild(sprite);
 
     const scores = [
-      parseInt(window.localStorage.getItem('amber').toString()),
-      parseInt(window.localStorage.getItem('ruby').toString()),
-      parseInt(window.localStorage.getItem('sapphire').toString()),
-      parseInt(window.localStorage.getItem('pearl').toString()),
+      parseInt(window.localStorage.getItem('amber').toString() || '0'),
+      parseInt(window.localStorage.getItem('ruby').toString() || '0'),
+      parseInt(window.localStorage.getItem('sapphire').toString() || '0'),
+      parseInt(window.localStorage.getItem('pearl').toString() || '0'),
     ];
     const highScore = Math.max(...scores);
 
@@ -75,10 +75,10 @@
   downloadAsset().then(() => {
     document.addEventListener('click', () => {
       const scores = [
-        parseInt(window.localStorage.getItem('amber').toString()),
-        parseInt(window.localStorage.getItem('ruby').toString()),
-        parseInt(window.localStorage.getItem('sapphire').toString()),
-        parseInt(window.localStorage.getItem('pearl').toString()),
+        parseInt(window.localStorage.getItem('amber').toString() || '0'),
+        parseInt(window.localStorage.getItem('ruby').toString() || '0'),
+        parseInt(window.localStorage.getItem('sapphire').toString() || '0'),
+        parseInt(window.localStorage.getItem('pearl').toString() || '0'),
       ];
       const highScore = Math.max(...scores);
 

@@ -9,9 +9,9 @@
 </script>
 
 <div class="container">
-  <Pixi />
   <Card img={amber} house="amber" />
   <Card img={ruby} house="ruby" />
   <Card img={sapphire} house="sapphire" />
   <Card img={pearl} house="pearl" />
+  <Pixi />
 </div>
