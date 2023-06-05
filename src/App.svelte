@@ -1,12 +1,5 @@
 <script lang="ts">
   // import svelteLogo from './assets/svelte.svg'
-  import amber from './assets/amber.jpeg';
-  import ruby from './assets/ruby.jpeg';
-  import sapphire from './assets/sapphire.jpeg';
-  import pearl from './assets/pearl.jpeg';
-  import Card from './lib/Card.svelte';
-  import Pixi from './lib/Pixi.svelte';
-
   if (window.localStorage.getItem('amber') === null) {
     window.localStorage.setItem('amber', '0');
   }
@@ -22,6 +15,13 @@
   if (window.localStorage.getItem('pearl') === null) {
     window.localStorage.setItem('pearl', '0');
   }
+
+  import amber from './assets/amber.jpeg';
+  import ruby from './assets/ruby.jpeg';
+  import sapphire from './assets/sapphire.jpeg';
+  import pearl from './assets/pearl.jpeg';
+  import Card from './lib/Card.svelte';
+  import Pixi from './lib/Pixi.svelte';
 </script>
 
 <div class="container">
